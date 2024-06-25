@@ -1,0 +1,172 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Brand: #f86927;
+  --Darkest: #191919;
+  --Dark: #484848;
+  --Mid: #7eaf77;
+  --Light: #e3c89b;
+  --Lightest: #f4e8d3;
+
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  background-color: var(--Darkest);
+  color: var(--Lightest);
+  padding: 80px 0px;
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  padding-bottom: 8px;
+}
+body > p {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 1.2rem;
+  color: var(--Lightest);
+}
+
+.container {
+  width: 100%; 
+  padding: 0px;
+      
+}
+.card {
+  background: #48484853;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.student-name {
+  color: var(--Brand);
+  font-size: 24px;
+}
+.nameStar {
+  display: flex;
+  align-items: center;
+  padding: 8px 0 3px;
+} 
+.nameStar > p {
+  margin-left: auto;
+  color: var(--Mid);
+  font-weight: 700;
+  background-color: #7daf7723;
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 5px;
+  
+}
+.grade-section {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--Lightest);
+}
+
+.position {
+  text-transform: capitalize;
+  padding-top: 8px;
+}
+.school-name {
+  font-size: 1.2rem;
+  color: var(--Light);
+  text-transform: capitalize;
+}
+.about {
+  margin-top: 15px;
+}
+.book-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 16px;
+}
+.book {
+  background: #7daf7723;
+  color: var(--Mid);
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+
+
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    gap: 20px;
+    padding: 16px 80px;
+    
+  }
+  .card {
+    margin: 0;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px #4848482e;
+  }
+  .img-container {
+    width: 140px;
+  }
+  
+  .lg-inner-card {
+    display: flex;
+    justify-content: baseline;
+    gap: 10px;
+  }
+  .name-container {
+    margin-top: auto;
+  }
+  .school-name {
+    font-size: 12px;
+  }
+  .student-name {
+    font-size: 16px;
+  }
+  .nameStar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nameStar > p {
+    margin: 0;
+    margin: 5px 0;
+    font-size: 12px;
+    padding: 2px 5px;
+  }
+  .grade-section {
+    margin: 10px 0; 
+  }
+  .grade-section span {
+    font-size: 12px;
+  }
+  .position {
+    font-size: 14px;
+  }
+  .about {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .book-container {
+    font-size: 12px;
+  }
+  .book {
+    padding: 4px;
+  }
+}
